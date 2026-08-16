@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Westan Market — fresh farm produce direct from trusted growers." />
+    <title>Westan Market | Your marketplace, your opportunity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement"><span>Farm-fresh produce, delivered to your door</span><span>•</span><span>Supporting Kenyan growers</span></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Westan Market home"><span class="brand-mark">W</span><span>westan<span>market</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="#categories">Categories</a><a href="#shops">Stores</a><a href="#trader">Sell on Westan</a></nav>
+      <div class="header-actions"><button class="text-btn login-btn">Log in</button><button class="cart-btn" id="cartButton" aria-label="Open shopping cart">⌑ <span>Cart</span><b id="cartCount">0</b></button><button class="menu-btn" id="menuButton" aria-label="Open navigation">☰</button></div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Straight from the farm</p>
+          <h1>Good food starts<br /><em>close to the soil.</em></h1>
+          <p class="hero-text">Shop grains, roots, fruit and vegetables harvested by trusted Kenyan farmers and delivered fresh to you.</p>
+          <form class="search-wrap" id="searchForm"><span>⌕</span><input id="searchInput" type="search" placeholder="Search millet, avocado, rice or a farm..." /><button type="submit">Search</button></form>
+          <div class="hero-proof"><div class="avatars"><i>AM</i><i>JO</i><i>MK</i></div><span>Trusted by <strong>10,000+ shoppers</strong><br />across Kenya</span></div>
+        </div>
+        <div class="hero-art" aria-label="Colourful grocery collection">
+          <div class="hero-blob"></div><div class="hero-card fresh-card"><span class="mini-icon">🥬</span><b>Fresh, every day</b><small>From local growers</small></div><div class="hero-card rating-card"><span>★</span><b>4.9</b><small>Shopper rating</small></div>
+          <div class="produce produce-one">🍊</div><div class="produce produce-two">🥑</div><div class="produce produce-three">🥖</div><div class="produce produce-four">🌿</div>
+          <div class="basket"><div>FRESH<br /><small>MARKET</small></div><span>🍅</span><span>🍋</span><span>🥕</span></div>
+        </div>
+      </section>
+
+      <section class="categories section" id="categories">
+        <div class="section-heading"><div><p class="eyebrow">Explore Westan</p><h2>Find what you need</h2></div><a href="#products" class="arrow-link">View all categories <span>→</span></a></div>
+        <div class="category-grid">
+          <button class="category active" data-filter="all"><span>✦</span>All produce</button><button class="category" data-filter="Grains"><span>🌾</span>Grains</button><button class="category" data-filter="Roots"><span>🍠</span>Roots & tubers</button><button class="category" data-filter="Fruit"><span>🥑</span>Fruit</button><button class="category" data-filter="Vegetables"><span>🥬</span>Vegetables</button><button class="category" data-filter="Legumes"><span>🫘</span>Legumes</button><button class="category" data-filter="Herbs"><span>🌿</span>Herbs & spices</button><button class="category" data-filter="Farm"><span>🌱</span>Farm essentials</button>
+        </div>
+      </section>
+
+      <section class="products-section section" id="products">
+        <div class="section-heading"><div><p class="eyebrow">Chosen for you</p><h2>Featured products</h2></div><div class="product-controls"><button id="prevProducts">←</button><button id="nextProducts">→</button></div></div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="trader-banner" id="trader">
+          <div class="trader-art"><div class="circle-text">YOUR FARM • YOUR FUTURE • </div><div class="storefront"><div class="awning"></div><div class="shop-sign">MAMA<br /><small>JANE'S</small></div><div class="window">🌱</div></div><div class="person">👩🏾‍🌾</div></div>
+          <div class="trader-copy"><p class="eyebrow">For farmers & produce sellers</p><h2>Your harvest<br />deserves a <em>market.</em></h2><p>Sell to thousands of shoppers today. Set up your farm store, list your harvest, and grow on your own terms.</p><ul><li><span>✓</span> Set up in minutes, no technical skills needed</li><li><span>✓</span> Manage orders, stock &amp; payments in one place</li><li><span>✓</span> Reach customers beyond your neighbourhood</li></ul><button class="primary-btn open-store">Open your farm store <span>→</span></button></div>
+      </section>
+
+      <section class="stores-section section" id="shops"><div class="section-heading"><div><p class="eyebrow">Meet the makers</p><h2>Popular stores</h2></div><a href="#shops" class="arrow-link">Browse all stores <span>→</span></a></div><div class="store-grid" id="storeGrid"></div></section>
+      <section class="how-section"><p class="eyebrow">Simple &amp; secure</p><h2>Made for every side of the market.</h2><div class="how-grid"><article><span>01</span><i>⌕</i><h3>Discover</h3><p>Find brilliant products from trusted sellers, all in one place.</p></article><article><span>02</span><i>🛍</i><h3>Order with ease</h3><p>Shop securely, choose delivery, and track every order.</p></article><article><span>03</span><i>↗</i><h3>Grow together</h3><p>Open a store and turn what you make into a thriving business.</p></article></div></section>
+    </main>
+    <footer><a class="brand" href="#top"><span class="brand-mark">W</span><span>westan<span>market</span></span></a><p>© 2026 Westan Market. Made for local commerce.</p><div><a href="#top">Help centre</a><a href="#top">Terms</a><a href="#top">Privacy</a></div></footer>
+    <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart"><div class="cart-head"><h2>Your cart</h2><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is waiting for something lovely.</p></div><div class="cart-footer"><div><span>Subtotal</span><strong id="cartTotal">KSh 0</strong></div><button class="primary-btn checkout-btn">Proceed to checkout <span>→</span></button></div></aside><div class="overlay" id="overlay"></div>
+    <div class="modal" id="storeModal"><button class="modal-close">×</button><p class="eyebrow">Welcome to Westan</p><h2>Create your store</h2><p>Join the local marketplace. Your seller dashboard will be ready in minutes.</p><input placeholder="Your store name" /><input placeholder="Phone number" /><button class="primary-btn" id="startStore">Start selling <span>→</span></button></div>
+    <div class="toast" id="toast">Added to your cart</div><script src="app.js"></script>
+  </body>
+</html>
